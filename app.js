@@ -8,7 +8,7 @@ const urlencodeParser=bodyParser.urlencoded({extended:false});
 const sql=mysql.createConnection({
     host:'localhost',
     user: 'root',
-    password:'21436587',
+    password:'********',
     port:'3306'
 })
 sql.query("use db");
