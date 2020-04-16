@@ -1,0 +1,17 @@
+<div class="b">
+    <h2 style="text-align: center; color:blue">Atualizar Tarefas</h2>
+<form name="form1" action="/controllerUpdate" method="post">
+    <input type="hidden"  class="form-control" name="id" id="id" placeholder="Código" value="{{id}}"> <br> <br>
+    <input type="text"  class="form-control" name="name" id="name" placeholder="Tarefa" value="{{name}}"> <br> <br>
+    <input type="text"  class="form-control" name="description" id="description" placeholder="Descrição" value="{{description}}"> <br> <br>
+    <input type="date"  class="form-control" name="start_date" id="start_date" placeholder="Data Inicial" value="{{start_date}}"> <br> <br>
+    <input type="date"  class="form-control" name="end_date" id="end_date" placeholder="Data Final" value="{{end_date}}"> <br> <br>
+    {{!-- <input type="text" name="priority" id="priority" placeholder="Priority:" value="{{priority}}"><br> --}}
+    <select class="form-control" style="background:rgb(5, 246, 246);" name="priority" id="priority"> 
+        <option value="{{priority}}">Prioridade</option> 
+        <option value="Baixa">Baixa</option>
+        <option value="Alta">Alta</option> 
+        </select><br><br>
+    <input type="submit" style="background: green; color:black; font-size:20px;" class="form-control" name="btnSubmit" id="btnSubmit" value="Atualizar"> <br> <br>
+</form>
+</div>
